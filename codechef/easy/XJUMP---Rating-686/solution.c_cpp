@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    // your code goes here
+    int t;
+    cin >> t;
+    while(t--) {
+        int x, y;
+        cin >> x >> y;
+        // Number of moves = (number of Y-sized jumps) + (remaining single steps)
+        cout << (x / y + x % y) << endl;
+    }
+    return 0;
+}
