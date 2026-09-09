@@ -55,25 +55,38 @@ NO
 
 ## Solution
 
-**Language:** C++  
+**Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-08T18:55:14.810Z  
+**Submitted:** 2026-09-09T18:51:18.238Z  
 
-```cpp
+```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	// your code goes here
-	int t;
-	cin>>t;
-	while(t--){
-	    int  
-	}
-
+    // Fast I/O
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    
+    int t;
+    cin >> t;
+    while(t--) {
+        int w, x, y, z;
+        cin >> w >> x >> y >> z;
+        
+        // Check if W matches any individual weight, 
+        // any combination of two weights, or all three combined.
+        if (w == x || w == y || w == z || 
+            w == (x + y) || w == (y + z) || w == (x + z) || 
+            w == (x + y + z)) {
+            cout << "YES\n";
+        } else {
+            cout << "NO\n";
+        }
+    }
+    return 0;
 }
-
 ```
 
 ---
