@@ -1,0 +1,38 @@
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    // Fast I/O
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    
+    int t;
+    cin >> t;
+    while(t--) {
+        int s, x, y, z;
+        cin >> s >> x >> y >> z;
+        
+        // Calculate current free space
+        int free_space = s - (x + y);
+        
+        // Additional space needed
+        int needed_space = z - free_space;
+        
+        if (needed_space <= 0) {
+            // Free space is already enough
+            cout << 0 << "\n";
+        } 
+        else if (needed_space <= max(x, y)) {
+            // Deleting the larger of the two apps is enough
+            cout << 1 << "\n";
+        } 
+        else {
+            // Must delete both apps
+            cout << 2 << "\n";
+        }
+    }
+
+    return 0;
+}
