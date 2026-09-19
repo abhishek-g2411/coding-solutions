@@ -1,0 +1,37 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+void solve() {
+    long long x, n;
+    cin >> x >> n;
+    
+    // Total capacity they currently have
+    long long current_capacity = x * 100;
+    
+    // If they can already carry all passengers
+    if (current_capacity >= n) {
+        cout << 0 << "\n";
+    } else {
+        // Passengers left over after filling existing planes
+        long long remaining_passengers = n - current_capacity;
+        
+        // Calculate the ceiling division of remaining_passengers / 100
+        // (remaining_passengers + 99) / 100 is a standard way to do ceiling division with integers
+        long long needed_planes = (remaining_passengers + 99) / 100;
+        
+        cout << needed_planes << "\n";
+    }
+}
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    
+    int t;
+    cin >> t;
+    while (t--) {
+        solve();
+    }
+    
+    return 0;
+}
