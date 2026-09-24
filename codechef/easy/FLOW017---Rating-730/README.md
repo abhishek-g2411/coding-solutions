@@ -38,20 +38,41 @@ Output
 
 ## Solution
 
-**Language:** C++  
+**Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-24T19:04:26.086Z  
+**Submitted:** 2026-09-24T19:05:07.014Z  
 
-```cpp
+```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	// your code goes here
+    // Fast I/O
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
 
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int A, B, C;
+        cin >> A >> B >> C;
+
+        // Check which one is the second largest
+        if ((A > B && A < C) || (A > C && A < B)) {
+            cout << A << "\n";
+        } 
+        else if ((B > A && B < C) || (B > C && B < A)) {
+            cout << B << "\n";
+        } 
+        else {
+            cout << C << "\n";
+        }
+    }
+
+    return 0;
 }
-
 ```
 
 ---
