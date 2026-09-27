@@ -87,12 +87,12 @@ So, Chef will attempt in the order $B \rightarrow A$ and thus obtain $1400$ poin
 
 ## Solution
 
-**Language:** c_cpp  
+**Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-25T18:29:15.565Z  
+**Submitted:** 2026-09-27T14:52:33.124Z  
 
-```c_cpp
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
