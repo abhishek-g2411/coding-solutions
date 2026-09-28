@@ -50,12 +50,12 @@ NO
 
 ## Solution
 
-**Language:** C++  
+**Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-28T19:42:49.815Z  
+**Submitted:** 2026-09-28T19:43:41.264Z  
 
-```cpp
+```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
