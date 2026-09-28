@@ -50,40 +50,20 @@ NO
 
 ## Solution
 
-**Language:** c_cpp  
+**Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-28T19:43:41.264Z  
+**Submitted:** 2026-09-28T19:42:37.595Z  
 
-```c_cpp
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
-void solve() {
-    int a, b, c, d;
-    cin >> a >> b >> c >> d;
-    
-    // A quadrilateral is cyclic if the sum of opposite angles is 180.
-    if (a + c == 180) {
-        cout << "YES\n";
-    } else {
-        cout << "NO\n";
-    }
+int main() {
+	// your code goes here
+
 }
 
-int main() {
-    // Fast I/O
-    
-    
-    
-    int t;
-    cin >> t;
-    while (t--) {
-        solve();
-    }
-    
-    return 0;
-}
 ```
 
 ---
