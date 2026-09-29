@@ -55,12 +55,12 @@ FAIL
 
 ## Solution
 
-**Language:** C++  
+**Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-28T19:39:32.092Z  
+**Submitted:** 2026-09-28T19:39:31.480Z  
 
-```cpp
+```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
