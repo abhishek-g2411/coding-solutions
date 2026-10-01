@@ -1,0 +1,19 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    // Fast I/O
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    int t;
+    cin >> t;
+    while (t--) {
+        int n;
+        cin >> n;
+        // (n + 9) / 10 calculates the ceiling of n / 10 using integer division
+        cout << (n + 9) / 10 << "\n";
+    }
+
+    return 0;
+}
