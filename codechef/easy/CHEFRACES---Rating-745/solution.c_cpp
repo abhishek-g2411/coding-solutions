@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    // Fast I/O
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    int t;
+    cin >> t;
+
+    while (t--) {
+        int x, y, a, b;
+        cin >> x >> y >> a >> b;
+
+        int gold = 0;
+
+        // Check if Chef's first race (X) doesn't clash with the rival's races
+        if (x != a && x != b) {
+            gold++;
+        }
+
+        // Check if Chef's second race (Y) doesn't clash with the rival's races
+        if (y != a && y != b) {
+            gold++;
+        }
+
+        cout << gold << "\n";
+    }
+
+    return 0;
+}
