@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    // Fast I/O
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    
+    int t;
+    cin >> t;
+    while (t--) {
+        float a, b, x, y;
+        cin >> a >> b >> x >> y;
+        
+        // Time taken = distance / speed
+        float time_chef = a / x;
+        float time_chefina = b / y;
+        
+        if (time_chef < time_chefina) {
+            cout << "Chef\n";
+        } else if (time_chefina < time_chef) {
+            cout << "Chefina\n";
+        } else {
+            cout << "Both\n";
+        }
+    }
+    
+    return 0;
+}
