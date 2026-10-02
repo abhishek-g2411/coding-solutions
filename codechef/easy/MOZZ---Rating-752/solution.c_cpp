@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+void solve() {
+    int x, y, r;
+    cin >> x >> y >> r;
+    
+    // Total sticks eaten by Chef
+    int total_sticks = x + (r / 30);
+    
+    // Calculate ceiling of (total_sticks / y) using integer arithmetic
+    int plates = (total_sticks + y - 1) / y;
+    
+    cout << plates << "\n";
+}
+
+int main() {
+    // Fast I/O
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    
+    int t;
+    cin >> t;
+    while (t--) {
+        solve();
+    }
+    
+    return 0;
+}
