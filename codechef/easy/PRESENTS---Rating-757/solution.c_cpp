@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+void solve() {
+    long long N;
+    cin >> N;
+    
+    // Calculate the number of free gifts
+    long long free_gifts = N / 5;
+    
+    // Total coins required is total gifts minus free gifts
+    long long coins = N - free_gifts;
+    
+    cout << coins << "\n";
+}
+
+int main() {
+    // Fast I/O
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    
+    int T;
+    cin >> T;
+    while (T--) {
+        solve();
+    }
+    
+    return 0;
+}
