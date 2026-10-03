@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+void solve() {
+    int n;
+    cin >> n;
+    
+    // Using integer arithmetic for ceiling division: ceil(a / b) = (a + b - 1) / b
+    // Here a = n - 1 and b = 7
+    int ans = (n - 1 + 6) / 7;
+    cout << ans << "\n";
+}
+
+int main() {
+    // Fast I/O
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    
+    int t;
+    cin >> t;
+    while (t--) {
+        solve();
+    }
+    return 0;
+}
