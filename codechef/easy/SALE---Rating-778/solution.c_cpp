@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    // Fast I/O
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    int t;
+    cin >> t;
+    while (t--) {
+        int a, b, c;
+        cin >> a >> b >> c;
+        
+        // The total amount to pay is the sum of all items minus the cheapest item
+        int total_sum = a + b + c;
+        int min_price = min({a, b, c});
+        
+        cout << total_sum - min_price << "\n";
+    }
+
+    return 0;
+}
