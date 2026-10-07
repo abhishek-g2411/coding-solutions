@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    // Fast I/O
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    
+    int t;
+    cin >> t;
+    while (t--) {
+        int n, a, b;
+        cin >> n >> a >> b;
+        
+        // Number of rounds is log2(N)
+        int k = log2(n);
+        
+        // Total time = (time spent in rounds) + (time spent in breaks)
+        int total_time = (k * a) + ((k - 1) * b);
+        
+        cout << total_time << "\n";
+    }
+
+    return 0;
+}
