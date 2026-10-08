@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+void solve() {
+    int a1, a2, a3, b1, b2, b3;
+    cin >> a1 >> a2 >> a3 >> b1 >> b2 >> b3;
+    
+    // Sum of the two highest is (total sum - minimum)
+    int alice_score = (a1 + a2 + a3) - min({a1, a2, a3});
+    int bob_score = (b1 + b2 + b3) - min({b1, b2, b3});
+    
+    if (alice_score > bob_score) {
+        cout << "Alice\n";
+    } else if (alice_score < bob_score) {
+        cout << "Bob\n";
+    } else {
+        cout << "Tie\n";
+    }
+}
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    
+    int t;
+    cin >> t;
+    while (t--) {
+        solve();
+    }
+    
+    return 0;
+}
