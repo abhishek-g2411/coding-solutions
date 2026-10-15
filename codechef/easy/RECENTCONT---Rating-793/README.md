@@ -67,20 +67,50 @@ START38 LTIME108 LTIME108 LTIME108 START38 LTIME108
 
 ## Solution
 
-**Language:** C++  
+**Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-11T20:30:03.836Z  
+**Submitted:** 2026-10-15T20:49:58.484Z  
 
-```cpp
-#include <bits/stdc++.h>
+```c_cpp
+#include <iostream>
+#include <string>
+
 using namespace std;
 
-int main() {
-	// your code goes here
-
+void solve() {
+    int n;
+    cin >> n;
+    
+    int start_count = 0;
+    int ltime_count = 0;
+    
+    for (int i = 0; i < n; i++) {
+        string code;
+        cin >> code;
+        if (code == "START38") {
+            start_count++;
+        } else {
+            ltime_count++;
+        }
+    }
+    
+    cout << start_count << " " << ltime_count << "\n";
 }
 
+int main() {
+    // Fast I/O
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    
+    int t;
+    cin >> t;
+    while (t--) {
+        solve();
+    }
+    
+    return 0;
+}
 ```
 
 ---
