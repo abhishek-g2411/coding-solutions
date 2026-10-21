@@ -5,8 +5,8 @@ int main() {
 	// your code goes here
 	int x,y;
 	cin>>x>>y;
-	if(x == y){
-	    cout<<0<<endl;
-	}else  if()
+	cout<<abs(x-y)- 1<<endl;
+	return 0;
+	
 
 }
