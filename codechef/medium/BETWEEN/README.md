@@ -57,12 +57,12 @@ Your rival team is $1$st, and you are $2$nd, no teams between you.
 
 ## Solution
 
-**Language:** C++  
+**Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-21T16:11:32.228Z  
+**Submitted:** 2026-10-21T16:10:05.126Z  
 
-```cpp
+```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
