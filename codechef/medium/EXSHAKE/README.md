@@ -61,7 +61,7 @@ Test case $1$: Inviting the groups with $1$ and $2$ people gives $3$ people and 
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-21T16:13:22.624Z  
+**Submitted:** 2026-10-21T16:13:44.402Z  
 
 ```c_cpp
 #include <iostream>
