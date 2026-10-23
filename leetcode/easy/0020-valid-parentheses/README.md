@@ -54,9 +54,9 @@ An input string is valid if:
 ## Solution
 
 **Language:** C++  
-**Runtime:** 2 ms (beats 15.31%)  
-**Memory:** 9 MB (beats 36.98%)  
-**Submitted:** 2026-10-01T20:43:13.315Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 8.6 MB (beats 97.27%)  
+**Submitted:** 2026-10-22T22:20:55.192Z  
 
 ```cpp
 class Solution {
