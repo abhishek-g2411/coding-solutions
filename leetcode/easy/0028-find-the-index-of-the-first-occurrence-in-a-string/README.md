@@ -38,8 +38,8 @@ Explanation: "leeto" did not occur in "leetcode", so we return -1.
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 8.9 MB (beats 92.10%)  
-**Submitted:** 2026-10-26T17:52:04.303Z  
+**Memory:** 9.2 MB (beats 44.62%)  
+**Submitted:** 2026-10-26T17:55:30.958Z  
 
 ```cpp
 
