@@ -43,8 +43,8 @@ Output: 16
 
 **Language:** C++  
 **Runtime:** 0 ms  
-**Memory:** 7.9 MB  
-**Submitted:** 2026-11-02T17:55:48.447Z  
+**Memory:** 8.2 MB  
+**Submitted:** 2026-11-02T17:56:08.929Z  
 
 ```cpp
 class Solution {
@@ -60,7 +60,7 @@ public:
         int moves = 0;
 
         for(int n : nums) {
-            moves += n - mini;
+            moves = n - mini;
         }
 
         return moves;
