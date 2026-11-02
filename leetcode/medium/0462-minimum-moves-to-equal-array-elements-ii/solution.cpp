@@ -11,7 +11,7 @@ public:
         int moves = 0;
 
         for(int n : nums) {
-            moves += n - mini;
+            moves = n - mini;
         }
 
         return moves;
