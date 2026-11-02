@@ -42,28 +42,24 @@ Output: 16
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 8.2 MB  
-**Submitted:** 2026-11-02T17:56:08.929Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 15.7 MB (beats 51.86%)  
+**Submitted:** 2026-11-02T18:00:10.916Z  
 
 ```cpp
 class Solution {
 public:
     int minMoves2(vector<int>& nums) {
-        int mini = INT_MAX;
+        
+        sort(nums.begin(), nums.end());
 
+        int median = nums[nums.size()/2];
+        int mov=0;
 
-        for(int n : nums) {
-            mini = min(mini, n);
-        }
+        for(int n : nums)
+        mov += abs(n - median);
 
-        int moves = 0;
-
-        for(int n : nums) {
-            moves = n - mini;
-        }
-
-        return moves;
+        return mov;
     }
 };
 ```
