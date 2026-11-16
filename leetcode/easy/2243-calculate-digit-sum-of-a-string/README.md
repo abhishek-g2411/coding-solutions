@@ -58,8 +58,8 @@ s becomes "0" + "0" + "0" = "000", whose length is equal to k, so we return "000
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 9.1 MB (beats 18.15%)  
-**Submitted:** 2026-11-16T18:31:09.218Z  
+**Memory:** 9 MB (beats 40.41%)  
+**Submitted:** 2026-11-16T18:31:15.516Z  
 
 ```cpp
 class Solution {
