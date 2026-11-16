@@ -30,20 +30,19 @@ Click on  **Submit**  below the IDE to know the result. Then click on next to co
 
 ## Solution
 
-**Language:** C++  
+**Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-02T15:38:08.725Z  
+**Submitted:** 2026-11-16T18:31:47.018Z  
 
-```cpp
+```c_cpp
 #include <iostream>
 using namespace std;
 
 int main() {
   cout << 12;
-   re
+  return 0;
 }
-
 ```
 
 ---
