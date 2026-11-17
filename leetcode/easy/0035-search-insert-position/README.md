@@ -10,6 +10,8 @@ You must write an algorithm with `O(log n)` runtime complexity.
 
  
 
+Original
+C++
  **Example 1:** 
 
 ```
@@ -47,8 +49,8 @@ Output: 4
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 13.7 MB (beats 9.95%)  
-**Submitted:** 2026-10-07T19:52:46.747Z  
+**Memory:** 13.5 MB (beats 94.74%)  
+**Submitted:** 2026-11-17T18:06:30.304Z  
 
 ```cpp
 class Solution {
