@@ -31,6 +31,8 @@ If all assertions pass, then your solution will be  **accepted**.
 
  
 
+Original
+C++
  **Example 1:** 
 
 ```
@@ -62,9 +64,9 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 23.5 MB (beats 5.57%)  
-**Submitted:** 2026-09-13T17:34:41.916Z  
+**Runtime:** 2 ms (beats 12.90%)  
+**Memory:** 23.4 MB (beats 5.93%)  
+**Submitted:** 2026-11-18T20:30:24.805Z  
 
 ```cpp
 class Solution {
