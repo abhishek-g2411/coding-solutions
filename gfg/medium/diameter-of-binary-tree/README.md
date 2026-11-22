@@ -29,7 +29,7 @@ Explanation: The longest path has 4 edges (node 3 -> node 8 -> node 5 -> node 6 
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-22T16:37:52.841Z  
+**Submitted:** 2026-11-22T16:38:00.415Z  
 
 ```cpp
 /* Structure of binary tree Node 
