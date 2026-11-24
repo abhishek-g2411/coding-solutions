@@ -10,10 +10,20 @@ public:
             long long lcmVal = 1;
 
             for (int j = i; j < n; j++) {
+
+                // Prevent overflow
+                if (product > 1e18 / nums[j])
+                    break;
+
                 product *= nums[j];
 
                 gcdVal = gcd(gcdVal, nums[j]);
+
                 lcmVal = lcm(lcmVal, (long long)nums[j]);
+
+                // Prevent overflow in gcd * lcm
+                if (lcmVal > 1e18 / gcdVal)
+                    break;
 
                 if (product == gcdVal * lcmVal) {
                     ans = max(ans, j - i + 1);
