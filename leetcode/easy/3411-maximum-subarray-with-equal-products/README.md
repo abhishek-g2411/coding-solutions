@@ -55,8 +55,8 @@ The longest product equivalent subarray is `[3, 4, 5].`
 
 **Language:** C++  
 **Runtime:** 0 ms  
-**Memory:** 8.4 MB  
-**Submitted:** 2026-11-24T20:13:48.140Z  
+**Memory:** 8.1 MB  
+**Submitted:** 2026-11-24T20:14:20.576Z  
 
 ```cpp
 class Solution {
@@ -71,10 +71,20 @@ public:
             long long lcmVal = 1;
 
             for (int j = i; j < n; j++) {
+
+                // Prevent overflow
+                if (product > 1e18 / nums[j])
+                    break;
+
                 product *= nums[j];
 
                 gcdVal = gcd(gcdVal, nums[j]);
+
                 lcmVal = lcm(lcmVal, (long long)nums[j]);
+
+                // Prevent overflow in gcd * lcm
+                if (lcmVal > 1e18 / gcdVal)
+                    break;
 
                 if (product == gcdVal * lcmVal) {
                     ans = max(ans, j - i + 1);
