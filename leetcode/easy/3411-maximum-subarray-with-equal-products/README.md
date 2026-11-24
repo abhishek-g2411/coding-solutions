@@ -54,9 +54,9 @@ The longest product equivalent subarray is `[3, 4, 5].`
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 8.1 MB  
-**Submitted:** 2026-11-24T20:14:20.576Z  
+**Runtime:** 4 ms (beats 21.59%)  
+**Memory:** 28 MB (beats 43.17%)  
+**Submitted:** 2026-11-24T20:14:26.620Z  
 
 ```cpp
 class Solution {
