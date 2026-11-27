@@ -12,6 +12,8 @@ The final sorted array should not be returned by the function, but instead be  *
 
  
 
+Original
+C++
  **Example 1:** 
 
 ```
@@ -60,9 +62,9 @@ Note that because m = 0, there are no elements in nums1. The 0 is only there to 
 ## Solution
 
 **Language:** C++  
-**Runtime:** 1 ms (beats 3.48%)  
-**Memory:** 12.4 MB (beats 54.02%)  
-**Submitted:** 2026-10-21T20:52:07.155Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 12.5 MB (beats 16.20%)  
+**Submitted:** 2026-11-27T17:53:48.792Z  
 
 ```cpp
 class Solution {
